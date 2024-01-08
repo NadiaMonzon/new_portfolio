@@ -1,0 +1,76 @@
+---
+import Badge from "../components/Badge.astro";
+import Experience from "../components/Experience.astro";
+import Pill from "../components/Pill.astro";
+import Projects from "../components/Projects.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../icons/Briefcase.astro";
+import Code from "../icons/Code.astro";
+import Github from "../icons/GitHub.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import Mail from "../icons/Mail.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+	title="Portfolio de Nadia"
+	description="Programador y desarrollador web especializado en Frontend y Diseño"
+>
+	<main class="px-4">
+		<SectionContainer
+			class="w-full lg:w-[740px] py-10 flex flex-col justify-center items-center mx-auto"
+		>
+			<h1
+				class="text-white lg:text-5xl md:text-4xl text-2xl font-bold flex flex-row gap-x-3 items-center"
+			>
+				¡Hola! Soy Nadia
+				<a
+					href="https://www.linkedin.com/in/nadiamonzon/"
+					class="align-center flex"
+				>
+					<Badge>Open to work</Badge>
+				</a>
+			</h1>
+			<h2
+				class="lg:text-2xl md:text-xl text-lg opacity-80 text-wrap max-w-[700px] text-center"
+			>
+				Desarrolladora web, enfocada en el Frontend y en Diseño
+			</h2>
+			<nav class="mt-4">
+				<ul class="flex gap-x-4">
+					<li>
+						<Pill href="https://www.linkedin.com/in/nadiamonzon">
+							<LinkedIn class="size-4 md:size-6" />LinkedIn
+						</Pill>
+					</li>
+					<li>
+						<!-- TODO: cambiar links -->
+						<Pill href="https://www.linkedin.com/in/nadiamonzon">
+							<Github class="size-4 md:size-6" />Github
+						</Pill>
+					</li>
+					<li>
+						<!-- TODO: cambiar links -->
+						<Pill href="https://www.linkedin.com/in/nadiamonzon">
+							<Mail class="size-4 md:size-6" />Email
+						</Pill>
+					</li>
+				</ul>
+			</nav>
+		</SectionContainer>
+		<SectionContainer id="experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				<Briefcase class="size-6" />
+				 Experiencia laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+		<SectionContainer id="projects" class="flex flex-col gap-6">
+			<h2 class="text-2xl font-semibold mb-2 flex gap-x-2 items-center">
+				<Code class="size-6" />
+				 Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+	</main>
+</Layout>

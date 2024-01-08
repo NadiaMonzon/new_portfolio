@@ -1,0 +1,23 @@
+---
+import Briefcase from "../icons/Briefcase.astro";
+import Code from "../icons/Code.astro";
+import Contact from "../icons/Contact.astro";
+import Home from "../icons/Home.astro";
+---
+
+<header
+    class="p-4 rounded lg:sticky fixed mx-auto my-8 lg:top-0 bottom-0 bg-slate-800/90 w-fit right-0 left-0 lg:p-6"
+>
+    <nav class="flex gap-x-10 opacity-90 lg:hidden">
+        <a href="#"><Home class="size-6" /></a>
+        <a href="#experience"><Briefcase class="size-6" /></a>
+        <a href="#projects"><Code class="size-6" /></a>
+        <a href=""><Contact class="size-6" /></a>
+    </nav>
+    <nav class="gap-x-10 opacity-90 hidden lg:flex">
+        <a href="#">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="">Contact me!</a>
+    </nav>
+</header>

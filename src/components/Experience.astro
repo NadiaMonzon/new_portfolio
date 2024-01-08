@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+    {
+        date: "Actualmente...",
+        title: "Frontend Developer - Desarrollo independiente",
+        description: `Centrada en crear nuevos proyectos,
+        aprender testing,
+        ++
+        `,
+        // link: "https://twitch.tv/midudev",
+    },
+    {
+        date: "Enero 2023 - Diciembre 2023 (11 meses)",
+        title: "Frontend Developer − Focus Desarrollos y Software",
+        description: `Lideré la adaptación de interfaces de usuario para dispositivos móviles,
+        desarrollé rápidamente nuevas habilidades necesarias para mejorar la app, como la maquetación de correos y la utilización de herramientas de diseño 
+        y contribuí a implementar mejoras significativas en la app, como la reducción de peticiones API y prácticas de desarrollo de código limpio. `,
+    },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+    {
+        EXPERIENCIE.map((experiencie) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experiencie} />
+            </li>
+        ))
+    }
+</ol>
