@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
 {
     PROJECTS.map((project) => (
         <article class="flex flex-col gap-y-4 p-6 border border-gray-200 rounded-lg">
-            <h3 class="text-lg font-bold text-[#DAFF3E]">{project.title}</h3>
+            <h3 class="text-lg font-bold text-[#a7dadc]">{project.title}</h3>
             <p class="text-md ">{project.description}</p>
             <ul class="flex gap-x-2">
                 {project.tags.map((tag) => (
@@ -45,7 +45,7 @@ const PROJECTS: Project[] = [
                 ))}
             </ul>
             <img src={project.image} alt="" />
-            <nav class="flex gap-x-2 justify-center flex-wrap gap-y-2">
+            <footer class="flex gap-x-2 justify-center flex-wrap gap-y-2">
                 {project.github && (
                     <a
                         href={project.github}
@@ -90,7 +90,7 @@ const PROJECTS: Project[] = [
                         Ve al sitio web
                     </a>
                 )}
-            </nav>
+            </footer>
         </article>
     ))
 }

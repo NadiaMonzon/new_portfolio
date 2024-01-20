@@ -6,6 +6,7 @@ import Projects from "../components/Projects.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Briefcase from "../icons/Briefcase.astro";
 import Code from "../icons/Code.astro";
+import Contact from "../icons/Contact.astro";
 import Github from "../icons/GitHub.astro";
 import LinkedIn from "../icons/LinkedIn.astro";
 import Mail from "../icons/Mail.astro";
@@ -69,6 +70,15 @@ import Layout from "../layouts/Layout.astro";
 				Proyectos
 			</h2>
 			<Projects />
+		</SectionContainer>
+		<SectionContainer
+			id="about-me"
+			class="grid lg:grid-cols-3 lg:grid-rows-4 gap-5"
+		>
+			<h2 class="text-2xl font-semibold mb-2 flex gap-x-2 items-center">
+				<Contact class="size-6" />
+				Sobre mi
+			</h2>
 		</SectionContainer>
 	</main>
 </Layout>
